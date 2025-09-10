@@ -1,0 +1,8 @@
+-- Using window function (recommended)
+SELECT recordDate
+FROM (
+  SELECT recordDate, temperature,
+         LAG(temperature) OVER (ORDER BY recordDate) AS prev_temp
+  FROM Weather
+) t
+WHERE temperature > prev_temp;
