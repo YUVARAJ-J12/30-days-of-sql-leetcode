@@ -5,7 +5,6 @@
 
 **SQL Solution:**
 ```sql
--- Using window function (recommended)
 SELECT recordDate
 FROM (
   SELECT recordDate, temperature,
