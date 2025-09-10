@@ -1,3 +1,10 @@
+# Day 01 — Rising Temperature
+**LeetCode:** https://leetcode.com/problems/rising-temperature/
+
+**Problem summary:** Return dates where today's temperature is higher than the previous day.
+
+**SQL Solution:**
+```sql
 -- Using window function (recommended)
 SELECT recordDate
 FROM (
